@@ -10,29 +10,28 @@
 #include <numeric>
 
 
-template<size_t N>  // help
+template<size_t N>
 int OddNumber(std::array<int, N> posInt) {
-    // this function calculates the volume of an icosahedron
+
     // input & variables
-    int positivity = [];
-    int odd_int = [];  // are these how you cite arrays?
     int loopCounter;
     int numberFromUser;
-    int posInt;
+    posInt = [];
+    positivity [];
 
-    for (loopCounter = 0; loopCounter < (posInt); loopCounter++) {  // help
+    for (loopCounter = 0; loopCounter < (posInt); loopCounter++) {
         std::cout << "Enter a number you want to check: ";
         std::cin >> numberFromUser;
-        positivity[loopCounter] = numberFromUser;  // help
+        positivity[loopCounter] = numberFromUser;
 
-    } for (loopCounter = 0; loopCounter < std::array<int, N> positivity); loopCounter++ {  // help
-        if positivity[loopCounter] % 2 != 0 {  // help
-            odd_int[loopCounter] = positivity([loopCounter])  // help
+    } for (loopCounter = 0; loopCounter < std::array<int, N> positivity); loopCounter++ {
+        if positivity[loopCounter] % 2 != 0 {
+            oddInt[loopCounter] = positivity([loopCounter])  // help
         } else {
-            odd_int[loopCounter](-1)  // help
+            oddInt[loopCounter] = -1
         }
     }
-    return odd_int;
+    return oddInt;
 }
 
 
@@ -44,16 +43,14 @@ int main() {
     int check;
     int loopCounter;
     // call function
-        std::cout << "This program takes all numbers from 0 to x and outputs the "
-              "odd numbers.";
+        std::cout << "This program takes all numbers from 0 to x and outputs "
+              "the odd numbers.";
         std::cout << "";
     try {
         std::cout << "Enter amount of numbers you want to check (0-100): ";
         std::cin >> posInt;
 
         // call function
-
-        std::array<int, 10> posInt;  // I dont understand why I have 10 as my parameter when the number can be infinite
         numberFromUser = oddNumber(posInt);
 
 
